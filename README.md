@@ -1,5 +1,3 @@
-# Azure-Honeynet-SOC
-
 # Building a SOC + Honeynet in Azure
 ![Cloud Honeynet / SOC](https://imgur.com/gw4cabm.jpg)
 
