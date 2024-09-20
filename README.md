@@ -1,7 +1,7 @@
 # Azure-Honeynet-SOC
 
 # Building a SOC + Honeynet in Azure
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+![Cloud Honeynet / SOC](https://imgur.com/gw4cabm.jpg)
 
 ## Introduction
 
@@ -14,10 +14,10 @@ In this project, I built a mini honeynet in Azure and integrated log sources fro
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Architecture Diagram](https://imgur.com/d9uQwIm.png)
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Architecture Diagram](https://imgur.com/SIVnaUC.png)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -55,6 +55,10 @@ Stop Time 2024-09-12 12:31:29
 ## Attack Maps After Hardening / Security Controls
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+<br><br>
+![NSG Allowed Inbound Malicious Flows](https://imgur.com/oa2EfJH.jpg)<br>
+![Linux Syslog Auth Failures](https://imgur.com/wnQj3qR.jpg)<br>
+![Windows RDP/SMB Auth Failures](https://imgur.com/xKWQr4x.jpg)<br>
 
 ## Metrics After Hardening / Security Controls
 
@@ -64,11 +68,11 @@ Stop Time	2024-09-16 05:33:03
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 0
-| Syslog                   | 12
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+| SecurityEvent            | 0 (-100%)
+| Syslog                   | 12 (-99.60%)
+| SecurityAlert            | 0 (-100%)
+| SecurityIncident         | 0 (-100%)
+| AzureNetworkAnalytics_CL | 0 (-100%)
 
 ## Conclusion
 
